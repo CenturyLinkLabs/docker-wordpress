@@ -14,7 +14,7 @@ then
         RET=1
         while [[ RET -ne 0 ]]; do
                 sleep 5
-                mysql -uroot -p$DB_PASSWORD -h$DB_1_PORT_3306_TCP_ADDR -P$DB_1_PORT_3306_TCP_PORT -e "CREATE DATABASE wordpress"
+                mysql -uroot -p$DB_PASSWORD -h$DB_1_PORT_3306_TCP_ADDR -P$DB_1_PORT_3306_TCP_PORT -e "CREATE DATABASE $DB_NAME"
                 RET=$?
         done
         echo "=> Done!"
