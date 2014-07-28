@@ -9,8 +9,7 @@ RUN apt-get update && \
 
 # Download latest version of Wordpress into /app
 RUN rm -fr /app && \ 
- git clone https://github.com/WordPress/WordPress.git /app && \
- git reset --hard 1dab780
+ git clone https://github.com/WordPress/WordPress.git /app 
 
 # Add wp-config with info for Wordpress to connect to DB
 ADD wp-config.php /app/wp-config.php
