@@ -1,5 +1,5 @@
-FROM centurylinklabs/apache-php:latest
-MAINTAINER CentruyLinkLabs
+FROM centurylink/apache-php:latest
+MAINTAINER CentruyLink
 
 # Install packages
 RUN apt-get update && \
