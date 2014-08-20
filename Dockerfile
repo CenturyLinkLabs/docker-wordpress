@@ -17,6 +17,9 @@ RUN rm -fr /app && mkdir /app && \
 ADD wp-config.php /app/wp-config.php
 RUN chmod 644 /app/wp-config.php
 
+# Fix permissions for apache
+RUN chown -R www-data:www-data /app
+
 # Add script to create 'wordpress' DB
 ADD run.sh run.sh
 RUN chmod 755 /*.sh
