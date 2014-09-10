@@ -1,5 +1,5 @@
 FROM centurylink/apache-php:latest
-MAINTAINER CentruyLink
+MAINTAINER CenturyLink
 
 # Install packages
 RUN apt-get update && \
