@@ -9,7 +9,7 @@ RUN apt-get update && \
 
 # Download Wordpress into /app
 RUN rm -fr /app && mkdir /app && \
- curl -O http://wordpress.org/wordpress-3.9.1.tar.gz && \
+ curl -L -O http://wordpress.org/wordpress-3.9.1.tar.gz && \
  tar -xzvf wordpress-3.9.1.tar.gz -C /app --strip-components=1 && \
  rm wordpress-3.9.1.tar.gz
 
